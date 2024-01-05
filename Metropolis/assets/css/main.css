@@ -1601,10 +1601,11 @@ button,
     pointer-events: none;
     opacity: 0.25; }
 
-  .button.auto {
+    .button.auto {
     height: auto; /* Adjusted for variable content height */
-    padding: 1em 0 0;    
-    min-width: 160px;
+    padding: 1em 0 0;  
+    min-width: 120px;
+    flex: 1 0 20%;
     margin: 10px;
   }
   
