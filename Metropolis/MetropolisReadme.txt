@@ -5,3 +5,5 @@ Da fare:
 - Aggiornare la lista carte.csv e gazzetta.csv (volendo c'è uno script)
 
 - Caricare le immagini del regolamento e creare la pagina
+
+trying to fix pathing issues
