@@ -24,7 +24,7 @@ async function setupGame() {
     // Check if cardsDeck exists and is not empty
     if (!metropolisData.cardsDeck || metropolisData.cardsDeck.length === 0) {
         // Fetch data from the carte.csv file
-        const carteCsvData = await fetch('../../game/carte.csv').then(response => response.text());
+        const carteCsvData = await fetch('../../../game/carte.csv').then(response => response.text());
         const carteOriginalArray = carteCsvData.split(',');
 
         // If cardsDeck is missing or empty, populate it with a copy of carteOriginalArray
@@ -37,7 +37,7 @@ async function setupGame() {
     }
 
     // Fetch data from the gazzetta.csv file
-    const gazzettaCsvData = await fetch('../../game/gazzetta.csv').then(response => response.text());
+    const gazzettaCsvData = await fetch('../../../game/gazzetta.csv').then(response => response.text());
     const gazzettaOriginalArray = gazzettaCsvData.split(',');
 
     // Check if gazzetteIndex has missing keys or incorrect length
