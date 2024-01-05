@@ -1,5 +1,5 @@
 function calculateOdds() {
-    const csvFilePath = '../../game/wheel.csv';
+    const csvFilePath = '../../../game/wheel.csv';
 
     fetch(csvFilePath)
         .then(response => response.text())
