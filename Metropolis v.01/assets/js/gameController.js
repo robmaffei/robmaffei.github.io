@@ -46,7 +46,7 @@ function loadDirectory(directoryUrl) {
 async function populateStartingDeck(metropolisData) {
     try {        
         //Starting deck setup
-        metropolisData.startingDeck = await loadDirectory('../../game/carte');
+        metropolisData.startingDeck = await loadDirectory('../../../game/carte');
         console.log("Populating starting deck.", metropolisData.startingDeck);
         // Save the updated data back to localStorage
         localStorage.setItem("metropolis", JSON.stringify(metropolisData));
@@ -61,7 +61,7 @@ async function populateStartingDeck(metropolisData) {
 async function createGazette(metropolisData) {
     try {        
         //Starting gazette setup
-        metropolisData.gazettePages = await loadDirectory('../../game/gazzetta');
+        metropolisData.gazettePages = await loadDirectory('../../../game/gazzetta');
         console.log("Populating gazette.", metropolisData.gazettePages);
         // Save the updated data back to localStorage
         localStorage.setItem("metropolis", JSON.stringify(metropolisData));
